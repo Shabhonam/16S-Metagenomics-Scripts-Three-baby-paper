@@ -1,3 +1,5 @@
+#Author Shabhonam.caim@quadram.ac.uk
+
 setwd("~/Desktop/Testdata/Mel/ThreeBaby/BabyZ_all/")
 library(Hotelling)
 library(vegan)
