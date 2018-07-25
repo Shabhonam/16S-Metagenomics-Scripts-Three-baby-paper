@@ -34,9 +34,9 @@ head(t_log_mat_data)
 # creates a own color palette from red to green
 my_palette <- colorRampPalette(c("red","yellow", "green"))(n = 299)
 # (optional) defines the color breaks manually for a "skewed"color transition
-col_breaks = c(seq(0,7,length=100),  # for blue
+col_breaks = c(seq(0,7,length=100),  # for red
                seq(7.1,8,length=100),           # for yellow
-               seq(8.1,11,length=100))             # for red
+               seq(8.1,11,length=100))             # for green
 
 # creates a 5 x 5 inch image - if you want to save the picture directly into a new file which you cannot visualise in the R studio
 #png("HeatmapBabyX.png",
@@ -147,12 +147,7 @@ col_breaks = c(seq(-5,-1,length=100),  # for blue
                seq(1,1.5,length=100),           # for yellow
                seq(1.6,5,length=100))             # for red
 
-# creates a 5 x 5 inch image - if you want to save the picture directly into a new file which you cannot visualise in the R studio
-#png("HeatmapBabyX.png",
-#   width = 5*300,        # 5 x 300 pixels
-#  height = 5*300,
-# res = 300,            # 300 pixels per inch
-#  pointsize = 8)        # smaller font size
+
 pdf("BabyZ-lipids-redone.pdf", 10,14)
 
 
